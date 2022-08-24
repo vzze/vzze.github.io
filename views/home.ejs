@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/home.css">
+    <title>vzze</title>
+</head>
+
+<body>
+    <div class="V"> <h1>V</h1> </div>
+
+    <div class="Text">
+        <ul class="RepoList">
+            <% filtered_props.forEach((repo, index) => { %>
+                <li>
+                    <a id="<%=`${(index + 1) * 2}`%>" class="RepoName" href="<%=repo.url%>" target="_blank" onmouseover=changeInvis(this) onmouseout=changeVis(this)>
+                        <%=repo.name%>
+                    </a>
+                </li>
+            <%}) %>
+            <% filtered_props.forEach((repo, index) => { %>
+                <li>
+                    <a id="<%=`${index * 2 + 1}`%>" class="RepoName" href="<%=repo.url%>" target="_blank" onmouseover=changeInvis(this) onmouseout=changeVis(this)>
+                        <%=repo.name%>
+                    </a>
+                </li>
+            <%}) %>
+        </ul>
+
+        <ul class="DescList">
+            <% filtered_props.forEach((repo, index) => { %>
+                <li class="DescLi">
+                    <a id="<%=`${(index + 1) * 2}d`%>" class="RepoDescInvis" href="<%=repo.url%>" target="_blank">
+                        <%=repo.description%>
+                    </a>
+                </li>
+            <%}) %>
+            <% filtered_props.forEach((repo, index) => { %>
+                <li class="DescLi">
+                    <a id="<%=`${index * 2 + 1}d`%>" class="RepoDescInvis" href="<%=repo.url%>" target="_blank">
+                        <%=repo.description%>
+                    </a>
+                </li>
+            <%}) %>
+        </ul>
+    </div>
+
+    <div class="BracketBackgroundOne"> <h1>&emsp;</h1> </div>
+    <div class="BracketBackgroundTwo"> <h1>&emsp;</h1> </div>
+
+    <div class="BracketOne"> <h1>|</h1> </div>
+    <div class="ExtraBracketTopOne"> <h1>|</h1> </div>
+    <div class="ExtraBracketBottomOne"> <h1>|</h1> </div>
+
+    <div class="BracketTwo"> <h1>|</h1> </div>
+    <div class="ExtraBracketTopTwo"> <h1>|</h1> </div>
+    <div class="ExtraBracketBottomTwo"> <h1>|</h1> </div>
+
+    <div class="Overlay"></div>
+    <div class="Top"></div>
+    <div class="Bottom"></div>
+    <div class="TopBar">
+        <a href="https://github.com/vzze" target="_blank" class="TopBarText TextGit">github</a>
+    </div>
+    <div class="BottomBar">
+        <form method="post" class="RefreshForm">
+            <button type="submit" id="rbtn" name="refreshbutton" class="RefreshButton" onclick=rbtnAnimation(this)>refresh</button>
+        </form>
+        <a class="BottomCText">2022 vzze</a>
+    </div>
+    <script>
+        if(window.history.replaceState) window.history.replaceState(null, null, window.location.href);
+
+        function rbtnAnimation(th) {
+            let i = 0; setInterval(() => {
+            th.textContent='refresh' + Array(i % 3 + 2).join('.'); i++; }, 500)
+        }
+
+        function changeInvis(th) {
+            document.getElementById(th.id + 'd').className = "RepoDescVis";
+        }
+
+        function changeVis(th) {
+            document.getElementById(th.id + 'd').className = "RepoDescInvis";
+        }
+    </script>
+</body>
+
+</html>

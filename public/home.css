@@ -1,0 +1,568 @@
+body {
+    margin: 0px;
+    background-color: #000000
+}
+
+.V {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: fadeinV 2s ease-out, fadeoutV 0s 4s;
+    animation-fill-mode: forwards;
+
+    font-family: "Courier New", monospace;
+    font-size: 78px;
+    color: #FFFFFF;
+    pointer-events: none;
+}
+
+@keyframes fadeinV {
+    0%   { opacity: 0 }
+    5%   { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+@keyframes fadeoutV {
+    100% { opacity: 0 }
+}
+
+.BracketBackgroundOne {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    padding-right: 200px;
+    margin-left: -163px;
+
+    animation: moveBracketBackgroundOne 2s ease-out, inwardsBracketBackgroundOne 2s 2s, outwardsBracketBackgroundOne 2s 4s ease-out, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    background-color: #000000;
+    pointer-events: none;
+}
+
+@keyframes moveBracketBackgroundOne {
+    0%   { left: 50% }
+    20%  { left: 50% }
+    100% { left: 45% }
+}
+
+@keyframes inwardsBracketBackgroundOne {
+    100% { left: 50% }
+}
+
+@keyframes outwardsBracketBackgroundOne {
+    100% { left: 30% }
+}
+
+.BracketOne {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+
+    animation: fadeinBracketOne 2s ease-out, inwardsBracketOne 2s 2s, outwardsBracketOne 2s 4s ease-out, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes fadeinBracketOne {
+    0%   { opacity: 0; left: 50% }
+    10%  { opacity: 0 }
+    20%  { left: 50% }
+    100% { opacity: 1; left: 45% }
+}
+
+@keyframes inwardsBracketOne {
+    100% { left: 50% }
+}
+
+@keyframes outwardsBracketOne {
+    100% { left: 30% }
+}
+
+.ExtraBracketTopOne {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+    opacity: 0;
+
+    animation: outwardsExtraBracketTopOne 2s 4s ease-out, showExtraBracketTopOne 0s 4s, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes showExtraBracketTopOne {
+    100% { opacity: 1 }
+}
+
+@keyframes outwardsExtraBracketTopOne {
+    70%  { padding-bottom: 290px }
+    100% { left: 30%; padding-bottom: 290px }
+}
+
+.ExtraBracketBottomOne {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+    opacity: 0;
+
+    animation: outwardsExtraBracketBottomOne 2s 4s ease-out, showExtraBracketBottomOne 0s 4s, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes showExtraBracketBottomOne {
+    100% { opacity: 1 }
+}
+
+@keyframes outwardsExtraBracketBottomOne {
+    70%  { padding-top: 245px }
+    100% { left: 30%; padding-top: 245px }
+}
+
+.BracketBackgroundTwo {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    padding-right: 200px;
+    margin-left: 163px;
+
+    animation: moveBracketBackgroundTwo 2s ease-out, inwardsBracketBackgroundTwo 2s 2s, outwardsBracketBackgroundTwo 2s 4s ease-out, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    background-color: #000000
+}
+
+@keyframes moveBracketBackgroundTwo {
+    0%   { left: 50% }
+    20%  { left: 50% }
+    100% { left: 55% }
+}
+
+@keyframes inwardsBracketBackgroundTwo {
+    100% { left: 50% }
+}
+
+@keyframes outwardsBracketBackgroundTwo {
+    100% { left: 70% }
+}
+
+.BracketTwo {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+
+    animation: fadeinBracketTwo 2s ease-out, inwardsBracketTwo 2s 2s, outwardsBracketTwo 2s 4s ease-out, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes fadeinBracketTwo {
+    0%   { opacity: 0; left: 50% }
+    10%  { opacity: 0 }
+    20%  { left: 50% }
+    100% { opacity: 1; left: 55% }
+}
+
+@keyframes inwardsBracketTwo {
+    100% { left: 50% }
+}
+
+@keyframes outwardsBracketTwo {
+    100% { left: 70% }
+}
+
+.ExtraBracketTopTwo {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+    opacity: 0;
+
+    animation: outwardsExtraBracketTopTwo 2s 4s ease-out, showExtraBracketTopTwo 0s 4s, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes showExtraBracketTopTwo {
+    100% { opacity: 1 }
+}
+
+@keyframes outwardsExtraBracketTopTwo {
+    70%  { padding-bottom: 290px }
+    100% { left: 70%; padding-bottom: 290px }
+}
+
+.ExtraBracketBottomTwo {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 45px;
+    opacity: 0;
+
+    animation: outwardsExtraBracketBottomTwo 2s 4s ease-out, showExtraBracketBottomTwo 0s 4s, fadeOut 2s 6s ease-in;
+    animation-fill-mode: forwards;
+
+    font-size: 68px;
+    pointer-events: none;
+    color: #FFFFFF
+}
+
+@keyframes showExtraBracketBottomTwo {
+    100% { opacity: 1 }
+}
+
+@keyframes outwardsExtraBracketBottomTwo {
+    70%  { padding-top: 245px }
+    100% { left: 70%; padding-top: 245px }
+}
+
+@keyframes fadeOut {
+    100% { opacity: 0 }
+}
+
+.Text {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+
+    animation: showText 0s 4s;
+    animation-fill-mode: forwards;
+
+    font-family: "Courier New", monospace;
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0;
+    overflow: hidden
+}
+
+@keyframes showText {
+    100% { opacity: 1 }
+}
+
+.RepoList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+
+    display: inline-block;
+    animation: scrollUp 16s linear infinite;
+    overflow: hidden;
+}
+
+.DescList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    text-align: center;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+
+    font-size: 20px;
+    display: inline-block;
+    animation: scrollUp 16s linear infinite;
+    overflow: hidden;
+    pointer-events: none
+}
+
+.DescLi {
+    list-style: none;
+    margin: 0 0 22px 0
+}
+
+@keyframes scrollUp {
+    100% { transform: translate(-50%, -75%) }
+}
+
+ul li {
+    list-style: none;
+}
+
+.RepoName {
+    opacity: 1;
+    transition: all 500ms
+}
+
+.RepoName:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.RepoName:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.RepoName:hover {
+    opacity: 0.2;
+    font-size: 60px;
+    padding: 20px;
+    text-decoration: none
+}
+
+.RepoDescInvis {
+    opacity: 0;
+    transition: all 500ms;
+    text-decoration: none
+}
+
+.RepoDescInvis:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.RepoDescInvis:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.RepoDescVis {
+    color: #FFFFFF;
+    opacity: 1;
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+.RepoDescVis:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.RepoDescVis:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.Overlay {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 40%;
+    transform: translate(-50%, -50%) scale(1, 2.5);
+
+    animation: tightenOverlay 2s 4s ease-in;
+    animation-fill-mode: forwards;
+
+    pointer-events: none;
+
+    background-image: linear-gradient(#000000 30%, #00000000, #000000 70%)
+}
+
+@keyframes tightenOverlay {
+    100% { transform: translate(-50%, -50%) scale(1, 1.2) }
+}
+
+.Top {
+    text-align: center;
+    position: absolute;
+
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, 0%);
+
+    animation: tightenTop 2s 4s ease-in;
+    animation-fill-mode: forwards;
+
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+@keyframes tightenTop {
+    100% { height: 40% }
+}
+
+.Bottom {
+    text-align: center;
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -100%);
+
+    animation: tightenBottom 2s 4s ease-in;
+    animation-fill-mode: forwards;
+
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+@keyframes tightenBottom {
+    100% { height: 40% }
+}
+
+.BottomBar {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+.TopBar {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+}
+
+.TopBarText {
+    transition: all 500ms;
+    padding-right: 20px;
+
+    animation: ShowBottomBarOpts 8s ease-in;
+
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+}
+
+.TextGit {
+    color: #FFFFFF;
+    opacity: 0.6
+}
+
+.TextGit:link {
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none
+}
+
+.TextGit:visited {
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none
+}
+
+.TextGit:hover {
+    color: #C9510C;
+    opacity: 1
+}
+
+.BottomCText {
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+
+    animation: ShowBottomBarOpts 8s ease-in;
+    transition: all 500ms;
+
+    float: right;
+    padding-right: 10px;
+}
+
+.BottomCText:hover {
+    color: #FCC0FF;
+    opacity: 1;
+}
+
+.RefreshForm {
+    position: absolute;
+    padding: 0;
+    width: 150px;
+}
+
+.RefreshButton {
+    border: none;
+    background: none;
+    padding-left: 10px;
+
+    animation: ShowBottomBarOpts 8s ease-in;
+
+    transition: all 500ms;
+
+    opacity: 0.6;
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.RefreshButton:hover {
+    opacity: 1
+}
+
+@keyframes ShowBottomBarOpts {
+    0%   { opacity: 0 }
+    75%  { opacity: 0 }
+    100% { opacity: 0.6 }
+}
