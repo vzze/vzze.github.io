@@ -12,7 +12,7 @@ app.set("view engine", ejs);
 
 app.use("/", home);
 
-app.listen(3000, (error) => {
+app.listen(process.env.PORT || 3000, (error) => {
     if(error)
         return console.log(`Error: ${error}\n`);
     return console.log("Server Started");
