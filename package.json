@@ -8,7 +8,7 @@
     "node": "14.20.0"
   },
   "scripts": {
-    "run": "node ./main/main.js",
+    "start": "node ./main/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vzze",
