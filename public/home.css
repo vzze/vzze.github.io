@@ -276,8 +276,14 @@ body {
     left: 50%;
     transform: translate(-50%, -25%);
     display: inline-block;
-    animation: scrollUp 16s linear infinite;
+    animation: EnableMouseHover 0s 7s, scrollUp 16s linear infinite;
+    animation-fill-mode: forwards;
     overflow: hidden;
+    pointer-events: none;
+}
+
+@keyframes EnableMouseHover {
+    100% { pointer-events: auto }
 }
 
 .DescList {
@@ -299,6 +305,57 @@ body {
 .DescLi {
     list-style: none;
     margin: 0 0 22px 0
+}
+
+.StaticText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    animation: showText 0s 4s;
+    animation-fill-mode: forwards;
+    font-family: "Courier New", monospace;
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none
+}
+
+.StaticRepoList {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    transition: all 2000ms;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.StaticDescList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    display: inline-block;
+    transition: all 2000ms;
+    overflow: hidden;
+    pointer-events: none
 }
 
 @keyframes scrollUp {
@@ -392,6 +449,37 @@ ul li {
     transform: translate(-50%, 0%);
     animation: tightenTop 2s 4s ease-in;
     animation-fill-mode: forwards;
+    transition: all 500ms;
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+.TopHide {
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    height: 40%;
+    transform: translate(-50%, 0%);
+    animation: tightenFully 2s 0s ease-in;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+.TopShow {
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translate(-50%, 0%);
+    animation: tightenTop 2s 0s ease-in;
+    animation-fill-mode: forwards;
     overflow: hidden;
     pointer-events: auto;
     background-color: #000000
@@ -411,6 +499,37 @@ ul li {
     transform: translate(-50%, -100%);
     animation: tightenBottom 2s 4s ease-in;
     animation-fill-mode: forwards;
+    transition: all 500ms;
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+.BottomHide {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 40%;
+    transform: translate(-50%, -100%);
+    animation: tightenFully 2s 0s ease-in;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    pointer-events: auto;
+    background-color: #000000
+}
+
+.BottomShow {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translate(-50%, -100%);
+    animation: tightenBottom 2s 0s ease-in;
+    animation-fill-mode: forwards;
     overflow: hidden;
     pointer-events: auto;
     background-color: #000000
@@ -418,6 +537,10 @@ ul li {
 
 @keyframes tightenBottom {
     100% { height: 40% }
+}
+
+@keyframes tightenFully {
+    100% { height: 50% }
 }
 
 .BottomBar {
@@ -479,6 +602,7 @@ ul li {
     font-size: 20px;
     animation: ShowBottomBarOpts 8s ease-in;
     transition: all 500ms;
+    margin-top: 8px;
     float: right;
     padding-right: 10px;
 }
@@ -491,6 +615,7 @@ ul li {
 .RefreshForm {
     position: absolute;
     padding: 0;
+    margin-left: 130px;
     width: 150px;
 }
 
@@ -507,6 +632,23 @@ ul li {
 }
 
 .RefreshButton:hover {
+    opacity: 1
+}
+
+.FreezeButton {
+    border: none;
+    background: none;
+    padding-left: 10px;
+    animation: ShowBottomBarOpts 8s ease-in;
+    transition: all 500ms;
+    opacity: 0.6;
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    color: #FFFFFF;
+    float: left;
+}
+
+.FreezeButton:hover {
     opacity: 1
 }
 
