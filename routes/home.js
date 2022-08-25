@@ -34,11 +34,15 @@ user.listRepos().then(repos => {
                 filtered_props = organizeRepos(repos);
                 setTimeout(() => { handle_requests = false; }, 1000);
                 res.render("home.ejs", {filtered_props});
+            }).catch(_ => {
+                res.render("404.ejs")
             });
         } else {
             res.render("home.ejs", {filtered_props});
         }
     });
+}).catch(_ => {
+    res.render("404.ejs");
 });
 
 module.exports = router;
