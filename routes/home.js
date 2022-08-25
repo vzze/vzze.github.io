@@ -6,13 +6,10 @@ const user = gh.getUser("vzze");
 
 function organizeRepos(repos) {
     const filtered_props = [];
-
     repos.data.forEach(repo => {
         filtered_props.push({name: repo.name, description: repo.description, url: repo.html_url, stars: repo.stargazers_count})
     });
-
     filtered_props.sort((a, b) => b.stars - a.stars);
-
     return filtered_props;
 }
 
@@ -27,7 +24,6 @@ user.listRepos().then(repos => {
 
     router.post('/', (req, res) => {
         const { refreshbutton } = req.body;
-
         if(refreshbutton != undefined && !handle_requests) {
             handle_requests = true;
             user.listRepos().then(repos => {

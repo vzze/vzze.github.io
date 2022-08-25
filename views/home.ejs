@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/home.css">
@@ -13,10 +12,8 @@
     <meta name="author" content="vzze">
     <title>vzze</title>
 </head>
-
 <body>
-    <div class="V"> <h1>V</h1> </div>
-
+    <div class="V"><h1>V</h1></div>
     <div class="Text">
         <ul class="RepoList">
             <% filtered_props.forEach((repo, index) => { %>
@@ -34,7 +31,6 @@
                 </li>
             <%}) %>
         </ul>
-
         <ul class="DescList">
             <% filtered_props.forEach((repo, index) => { %>
                 <li class="DescLi">
@@ -52,18 +48,14 @@
             <%}) %>
         </ul>
     </div>
-
-    <div class="BracketBackgroundOne"> <h1>&emsp;</h1> </div>
-    <div class="BracketBackgroundTwo"> <h1>&emsp;</h1> </div>
-
-    <div class="BracketOne"> <h1>|</h1> </div>
-    <div class="ExtraBracketTopOne"> <h1>|</h1> </div>
-    <div class="ExtraBracketBottomOne"> <h1>|</h1> </div>
-
-    <div class="BracketTwo"> <h1>|</h1> </div>
-    <div class="ExtraBracketTopTwo"> <h1>|</h1> </div>
-    <div class="ExtraBracketBottomTwo"> <h1>|</h1> </div>
-
+    <div class="BracketBackgroundOne"><h1>&emsp;</h1></div>
+    <div class="BracketBackgroundTwo"><h1>&emsp;</h1></div>
+    <div class="BracketOne"><h1>|</h1></div>
+    <div class="ExtraBracketTopOne"><h1>|</h1></div>
+    <div class="ExtraBracketBottomOne"><h1>|</h1></div>
+    <div class="BracketTwo"><h1>|</h1></div>
+    <div class="ExtraBracketTopTwo"><h1>|</h1></div>
+    <div class="ExtraBracketBottomTwo"><h1>|</h1></div>
     <div class="Overlay"></div>
     <div class="Top"></div>
     <div class="Bottom"></div>
@@ -78,20 +70,12 @@
     </div>
     <script>
         if(window.history.replaceState) window.history.replaceState(null, null, window.location.href);
-
         function rbtnAnimation(th) {
             let i = 0; setInterval(() => {
             th.textContent='refresh' + Array(i % 3 + 2).join('.'); i++; }, 500)
         }
-
-        function changeInvis(th) {
-            document.getElementById(th.id + 'd').className = "RepoDescVis";
-        }
-
-        function changeVis(th) {
-            document.getElementById(th.id + 'd').className = "RepoDescInvis";
-        }
+        function changeInvis(th) { document.getElementById(th.id + 'd').className = "RepoDescVis"; }
+        function changeVis(th) { document.getElementById(th.id + 'd').className = "RepoDescInvis"; }
     </script>
 </body>
-
 </html>
