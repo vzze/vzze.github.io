@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.ProjectList {
+    margin: 0;
+    padding: 0;
+
+    animation: FadeIn 2s ease-out;
+
+    width: 100%;
+}
+
+.Box {
+    list-style: none;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.TitleItem {
+    font-family: "Monofur", monospace;
+    font-size: 30px;
+    opacity: 1;
+    color: #FFFFFF;
+    transition: all 500ms
+}
+
+.TitleItem:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.TitleItem:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.TitleItem:hover {
+    opacity: 0.2;
+    font-size: 60px;
+    padding: 20px;
+    text-decoration: none
+}
+
+.DescItemInvis {
+    font-family: "Monofur", monospace;
+    font-size: 24px;
+
+    color: #FCC0FF;
+
+    opacity: 0;
+
+    transition: all 500ms;
+    text-decoration: none
+}
+
+.DescItemInvis:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.DescItemInvis:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.DescItemVis {
+    font-family: "Monofur", monospace;
+    font-size: 24px;
+
+    color: #FFFFFF;
+    opacity: 1;
+
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+.DescItemVis:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.DescItemVis:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
