@@ -18,9 +18,6 @@ body {
     margin: 0;
     padding: 0;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
-
     transform: translateY(75%);
     animation: FadeIn 2s ease-out;
 
