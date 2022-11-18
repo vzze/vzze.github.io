@@ -40,12 +40,11 @@
             function CheckForColor(str) {
                 if(str[0] != '#' || str[7] != '|')
                     return str;
-                console.log(`<span style="color:${str.substr(0, 7)}">${str.substr(8)}</span>`)
                 return `<span style="color:${str.substr(0, 7)}">${str.substr(8)}</span>`
             }
 
             text = text.split(" ").map((str, i) =>
-                `<span style="animation: FadeIn 1s ${i / 6}s ease-out;animation-fill-mode:both">${CheckForColor(str)}</span>`
+                `<span class="Text" style="animation: FadeIn 1s ${i / 6}s ease-out;animation-fill-mode:both">${CheckForColor(str)}</span>`
             ).join(" ")
 
             document.getElementById("info").innerHTML = text

@@ -75,7 +75,7 @@ body {
 }
 
 @keyframes FadeOut {
-    100% { opacity: 0; }
+    100% { opacity: 0; color: #FCC0FF; }
 }
 
 @keyframes FadeInMainButtons {

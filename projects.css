@@ -4,10 +4,24 @@ body {
     background-color: #000000;
 }
 
+.CenterTop {
+    text-align: center;
+    position: absolute;
+
+    top: 0%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
 .ProjectList {
     margin: 0;
     padding: 0;
 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    transform: translateY(75%);
     animation: FadeIn 2s ease-out;
 
     width: 100%;
@@ -40,6 +54,7 @@ body {
 
 .TitleItem:hover {
     opacity: 0.2;
+    color: #FCC0FF;
     font-size: 60px;
     padding: 20px;
     text-decoration: none
