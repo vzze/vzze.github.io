@@ -16,10 +16,12 @@ body {
 
 .InfoText {
     font-family: "Monofur", monospace;
-
     font-size: 24px;
+
     color: #FFFFFF;
+
     pointer-events: none;
+
     padding: 0px;
     margin: 0px;
 }

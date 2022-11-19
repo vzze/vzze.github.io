@@ -20,20 +20,20 @@
     </head>
     <body>
         <div class="Background">
-            <div class="Center">
-                <p id="info" class="InfoText"></p>
+            <div class="Center" style="width:60%">
+                <p id="info" class="InfoText" style="transform:translateY(50%)"></p>
+                <p id="infoRefl" class="InfoText Reflection" style="transform:translateY(50%)scaleY(-1);opacity:0.6"></p>
             </div>
-            <div class="Center" style="margin-top:200px;opacity: 0.2;">
-                <p id="infoRefl" class="InfoText Reflection"></p>
+            <div class="Center">
             </div>
         </div>
         <script>
 
             let text = "I've been coding for " + String(Number(Date().match(/\d{4}/)) - 2019) + " years.<br>" +
-                `&nbsp&nbsp&nbsp&nbspI have mastered #f34b7d|C++, #7faeff|Lua and #f1e05a|Javascript. ` +
+                `I have mastered #f34b7d|C++, #7faeff|Lua and #f1e05a|Javascript. ` +
                 `I have experience and have worked with #e7ac57|Java, #75abd3|Python, #dea584|Rust, ` +
                 `#b2aca2|C, #3fdbff|Powershell #3fdbff|scripting and #5d95b1|OpenGL/GLSL.<br> <br>` +
-                `&nbsp&nbsp&nbsp&nbspNotable: made a game engine, a music player, published a Firefox extension,` +
+                `Notable: made a game engine, a music player, published a Firefox extension,` +
                 ` made a TUI 2D renderer, created a Discord bot ` +
                 `that has reached over 160 thousand users, made plugins for Neovim.`
 

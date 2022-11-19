@@ -59,7 +59,7 @@ body {
 }
 
 .Reflection {
-    transform:  scaleY(-1);
+    transform: scaleY(-1);
 
     background: linear-gradient(to bottom, #000000 20%, #FFFFFF 100%);
     background-clip: text;
