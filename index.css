@@ -63,6 +63,7 @@ body {
 
     background: linear-gradient(to bottom, #000000 20%, #FFFFFF 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     pointer-events: none;
