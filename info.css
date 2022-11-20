@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Text {
+    color: #FFFFFF;
+    transition: all 500ms;
+    pointer-events: auto;
+}
+
+.Text:hover {
+    color: #edd5ff;
+}
+
+.InfoText {
+    font-family: "Monofur", monospace;
+    font-size: 24px;
+
+    color: #FFFFFF;
+
+    pointer-events: none;
+
+    padding: 0px;
+    margin: 0px;
+}

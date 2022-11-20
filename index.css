@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Background {
+    align-self: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.Center {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.V {
+    font-family: "Monofur", monospace;
+
+    animation: FadeIn 2s ease-out, FadeOut 2s 2.5s;
+    animation-fill-mode: forwards;
+
+    font-size: 180px;
+    color: #FFFFFF;
+    pointer-events: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.MainButtons {
+    border: none;
+    background: none;
+
+    font-family: "Monofur", monospace;
+    font-size: 30px;
+
+    animation: FadeInMainButtons 2s 4.5s;
+    animation-fill-mode: backwards;
+
+    transition: all 500ms;
+
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.MainButtons:hover {
+    opacity: 1;
+}
+
+.Reflection {
+    transform: scaleY(-1);
+
+    background: linear-gradient(to bottom, #000000 20%, #FFFFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    pointer-events: none;
+}
+
+@keyframes FadeIn {
+    0%   { opacity: 0; }
+    5%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes FadeOut {
+    100% { opacity: 0; color: #FCC0FF; }
+}
+
+@keyframes FadeInMainButtons {
+    0%   { opacity: 0; }
+    100% { opacity: 0.6; }
+}

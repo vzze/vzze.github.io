@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:image" content="https://raw.githubusercontent.com/vzze/vzze.github.io/static-page/meta/banner.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="460">
+        <meta property="og:image:height" content="460">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="vzze">
+        <meta property="og:description" content="edi's portofolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="vzze">
+
+        <link rel="icon" href="meta/new.png">
+        <link rel="stylesheet" href="index.css">
+
+        <title>vzze</title>
+    </head>
+    <body>
+        <div class="Background">
+            <div class="Center" style="width:100%">
+                <h class="V">V</h>
+            </div>
+            <div class="Center" style="margin-top:30px;width:100%">
+                <button id="1" class="MainButtons Reflection">Github</button>
+                <button id="2" class="MainButtons Reflection">Info</button>
+                <button id="3" class="MainButtons Reflection">Projects</button>
+            </div>
+            <div class="Center" style="width:100%">
+                <button onclick="Github()" class="MainButtons" onmouseover="LightReflection('1')" onmouseout="DimReflection('1')">
+                    Github
+                </button>
+                <button onclick="Info()" class="MainButtons" onmouseover="LightReflection('2')" onmouseout="DimReflection('2')">
+                    Info
+                </button>
+                <button onclick="Projects()" class="MainButtons" onmouseover="LightReflection('3')" onmouseout="DimReflection('3')">
+                    Projects
+                </button>
+            </div>
+        </div>
+        <script>
+            function LightReflection(id) { document.getElementById(id).style.opacity = 0.8 }
+            function DimReflection(id)   { document.getElementById(id).style.opacity = 0.6 }
+
+            function Github()   { location.href = "https://github.com/vzze" }
+            function Info()     { location.href = "info"                    }
+            function Projects() { location.href = "projects"                }
+        </script>
+    </body>
+</html>
