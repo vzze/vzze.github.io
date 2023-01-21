@@ -51,7 +51,7 @@
                 title_list.appendChild(createTitleLi(
                     {
                         name: repo.name,
-                        description: repo.description,
+                        description: (repo.description) ? repo.description : "404",
                         url: repo.html_url,
                         stars: repo.stargazers_count
                     }, i
@@ -60,7 +60,7 @@
                 desc_list.appendChild(createDescLi(
                     {
                         name: repo.name,
-                        description: repo.description,
+                        description: (repo.description) ? repo.description : "404",
                         url: repo.html_url,
                         stars: repo.stargazers_count
                     }, i
