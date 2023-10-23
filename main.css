@@ -34,12 +34,35 @@ body {
     border-bottom: 1px solid lightgray;
 }
 
+.section {
+    width: 100%;
+}
+
 .card-section {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
     padding: 100px 15%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content-card:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.content-section {
+    padding: 50px 15%;
+}
+
+.card-header {
+    padding: 10px 20px;
+}
+
+.content-body {
+    padding: 20px 20px;
+}
+
+.card-body {
+    background-color: white;
 }
 
 .btn-primary {
