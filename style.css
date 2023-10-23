@@ -1,7 +1,4 @@
-body {
-    background-color: #212529;
-}
-
-p {
-    color: white;
+.info {
+    padding-left: 10%;
+    padding-right: 10%;
 }
