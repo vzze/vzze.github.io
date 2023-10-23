@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+}
+
+:root {
+    --blue: #2F2E75
+}
+
+.navbar {
+    background-color: var(--blue);
+    padding: 10px 15%;
+}
+
+.nav-item,
+.navbar-brand {
+    color: white;
+}
+
+.nav-item:hover,
+.navbar-brand:hover,
+.nav-item:focus,
+.navbar-brand:focus {
+    color: lightgray;
+}
+
+.hero {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 15%;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.card-section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 100px 15%;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    filter: brightness(0.9);
+    background-color: var(--blue) !important;
+}
+
+.infoBlock {
+    padding-left: 10%;
+    padding-right: 10%;
+}
