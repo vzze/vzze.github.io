@@ -65,6 +65,10 @@ body {
     background-color: white;
 }
 
+.card-img-top {
+    height: 201px !important;
+}
+
 .btn-primary {
     background-color: var(--blue);
 }
