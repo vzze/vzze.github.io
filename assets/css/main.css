@@ -83,3 +83,18 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.dropdown-button {
+    background: white;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown-item {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: black;
+}

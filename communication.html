@@ -11,10 +11,19 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">CS Topics</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
+        <div class="navbar-toggler">
+            <button onclick="toggleDropdown()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarDropdown" class="dropdown-content">
+                <a class="dropdown-item" href="transportation.html">Transportation</a>
+                <a class="dropdown-item" href="medical.html">Medical</a>
+                <a class="dropdown-item" href="communication.html">Communications</a>
+            </div>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="transportation.html">Transportation</a>
@@ -48,5 +57,7 @@
         </p>
         <p>Information and communications technology (ICT) is often used as an extended synonym for information technology (IT), but is a more specific    term that stresses the role of unified communications. ICT provides access to information through telecommunications. It is similar to Information Technology (IT), but concentrates mostly on communication technologies such as the Internet, wireless networks, cell phones, and other communication mediums. ICT includes any communication device or application, encompassing: radio, television, cell phones, computer, laptops, tablets, and network hardware and software, so on. ICT also provides the various services online and applications associated with them</p>
     </div>
+
+    <script src="assets/js/toggleDropdown.js"></script>
 </body>
 </html>
