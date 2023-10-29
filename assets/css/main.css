@@ -58,36 +58,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media only screen and (max-width: 1100px) {
-    :root {
-        --side-margin: 5%;
-    }
+.author-section {
+    display: flex;
+    justify-content: space-between;
 }
-
-@media only screen and (max-width: 1000px) {
-    .card-text {
-        font-size: 14px;
-    }
-
-    :root {
-        --side-margin: 10%;
-    }
-
-    .card {
-        width: 15rem !important;
-    }
-}
-
-@media only screen and (max-width: 930px) {
-    .card-section {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        width: 100% !important;
-    }
-}
-
 
 /* Cards */
 
@@ -121,22 +95,43 @@ body {
     width: 100%;
 }
 
-.card-img-top {
+.card-img-top,
+.footer-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.footer-img {
+    width: calc(100% - 22rem - 20px);
+}
+
+.author-card {
+    width: 22rem;
 }
 
 .img-transportation {
     background-image: url(../images/transportation.png);
 }
 
+.img-transportation-footer {
+    background-image: url(../images/transportation-footer.png);
+}
+
 .img-medical {
     background-image: url(../images/medical.png);
 }
 
+.img-medical-footer {
+    background-image: url(../images/medical-footer.png);
+}
+
 .img-communications {
     background-image: url(../images/communications.png);
+}
+
+.img-communications-footer {
+    background-image: url(../images/communications-footer.png);
 }
 
 /* Buttons */
@@ -150,4 +145,41 @@ body {
 .btn-primary:focus {
     filter: brightness(0.9);
     background-color: var(--blue) !important;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1100px) {
+    :root {
+        --side-margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-text {
+        font-size: 14px;
+    }
+
+    :root {
+        --side-margin: 10%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
+    .author-card {
+        width: 100%;
+    }
+
 }
