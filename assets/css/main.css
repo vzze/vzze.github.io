@@ -6,12 +6,15 @@ body {
 }
 
 :root {
-    --blue: #2F2E75
+    --blue: #2F2E75;
+    --side-margin: 15%;
 }
+
+/* Navbar */
 
 .navbar {
     background-color: var(--blue);
-    padding: 10px 15%;
+    padding: 10px var(--side-margin);
 }
 
 .nav-item,
@@ -26,10 +29,20 @@ body {
     color: lightgray;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Page Structure */
+
 .hero {
     font-size: 22px;
     font-weight: bold;
-    padding: 20px 15%;
+    padding: 20px var(--side-margin);
     background-color: white;
     border-bottom: 1px solid lightgray;
 }
@@ -41,8 +54,46 @@ body {
 .card-section {
     display: grid;
     grid-gap: 1rem;
-    padding: 100px 15%;
+    padding: 100px var(--side-margin);
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 1100px) {
+    :root {
+        --side-margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-text {
+        font-size: 14px;
+    }
+
+    :root {
+        --side-margin: 10%;
+    }
+
+    .card {
+        width: 15rem !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+}
+
+
+/* Cards */
+
+.card {
+    /* Ensures borders remain rounded */
+    overflow: hidden !important;
 }
 
 .content-card:not(:last-of-type) {
@@ -50,7 +101,7 @@ body {
 }
 
 .content-section {
-    padding: 50px 15%;
+    padding: 50px var(--side-margin);
 }
 
 .card-header {
@@ -67,19 +118,36 @@ body {
 
 .card-img-top {
     height: 201px !important;
+    width: 100%;
 }
+
+.card-img-top {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.img-transportation {
+    background-image: url(../images/transportation.png);
+}
+
+.img-medical {
+    background-image: url(../images/medical.png);
+}
+
+.img-communications {
+    background-image: url(../images/communications.png);
+}
+
+/* Buttons */
 
 .btn-primary {
     background-color: var(--blue);
+    border: none;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     filter: brightness(0.9);
     background-color: var(--blue) !important;
-}
-
-.infoBlock {
-    padding-left: 10%;
-    padding-right: 10%;
 }
