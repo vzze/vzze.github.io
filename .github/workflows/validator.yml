@@ -2,9 +2,7 @@ name: HTML5 Validator
 
 on:
   push:
-    # branches: [ "main" ]
   pull_request:
-    # branches: [ "main" ]
 
 jobs:
   build:
