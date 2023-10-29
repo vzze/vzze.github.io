@@ -1,0 +1,16 @@
+name: HTML5 Validator
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Check HTML5
+      uses: Cyb3r-Jak3/html5validator-action@master
+      with:
+        root: ./
+        css: true
