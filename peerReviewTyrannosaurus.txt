@@ -1,0 +1,28 @@
+Interest of content:
+Pages were mainly text-based, with little content to break it up. 
+No walls of text, each paragraph is nicely presented in their own containers.
+Rating: Sound
+
+Consistency and quality of visuals:
+Pages are clean, themes of pages are consistent.
+
+Rating: Very good
+
+Quality of writing:
+
+No mistakes, cited sources
+
+Rating: Perfect
+
+Validity of HTML:
+
+Project uses embedded CSS within HTML, contains unused HTML files and in-dev content within project folder.
+Slight stylistic and readibility issues within project files.
+
+Rating: Good
+
+Evidence of collaboration:
+
+Commits were unbalanced, but evidence was present.
+
+Rating: Outstanding
